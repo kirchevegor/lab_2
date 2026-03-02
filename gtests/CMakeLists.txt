@@ -8,8 +8,8 @@ include(FetchContent)
 # URL-адрес указывает зипку репозитория GoogleTest, содержащий версию 609281088cfefc76f9d0ce82e1ff6c30cc3591e5
 FetchContent_Declare(
     googletest
-    URL https://github.com/google/googletest/archive/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip
-
+    URL https://github.com/google/googletest/archive/refs/tags/v1.14.0.zip
+    DOWNLOAD_EXTRACT_TIMESTAMP TRUE
 )
 # применяется только для систем Windows и предотвращает переопределение родительских настроек компилятора/линковщика
 # настройка gtest_force_shared_crt устанавливается в значение ON
